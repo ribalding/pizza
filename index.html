@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+      <link href="css/my.css" rel="stylesheet" type="text/css">
+      <script src="js/jquery-1.12.2.js"></script>
+      <script src="js/my.js"></script>
+    </head>
+    <body>
+      <div class="container">
+        <h1>Pizza Time</h1>
+        <div class="row" id="formDiv">
+          <form id="pizzaForm">
+            <div class="col-sm-6">
+              <h4>Create Your Pizza:</h4>
+              <div id=form-group>
+              <label for="pizzaSize">Select Size</label><br>
+                <select id="pizzaSize" class="form-control">
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select><br>
+              </div>
+              <div class="form-group">
+                <label for="toppingOne">Select First Topping:</label><br>
+                <select id="toppingOne" class="form-control">
+                  <option value="none">None</option>
+                  <option value="pepperoni">Pepperoni</option>
+                  <option value="peppers">Peppers</option>
+                  <option value="onions">Onions</option>
+                  <option value="chicken">Chicken</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="toppingTwo">Select Second Topping:</label><br>
+                <select id="toppingTwo" class="form-control">
+                  <option value="none">None</option>
+                  <option value="pepperoni">Pepperoni</option>
+                  <option value="peppers">Peppers</option>
+                  <option value="onions">Onions</option>
+                  <option value="chicken">Chicken</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <h4>Order Info</h4>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name"></input>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" class="form-control" id="phone"></input>
+              </div>
+              <div class="form-group">
+                <label for="street">Street Address</label>
+                <input type="text" class="form-control" id="street"></input>
+              </div>
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city"></input>
+              </div>
+              <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="form-control" id="state"></input>
+              </div>
+              <div class="form-group">
+                <label for="zip">Zip Code</label>
+                <input type="text" class="form-control" id="zip"></input>
+              </div>
+              <button type="submit" class="btn btn-primary">Place Order</button>
+            </div>
+          </form>
+        </div>
+        <div id="receiptDiv" class="row">
+          <div class="col-sm-5 col-sm-offset-3" id="receipt">
+            <h3>Thank You for Your Order <span class="outputName"></span>.<br>
+              Here is Your Receipt:<h3>
+            <h5><b>Order:</b> One <span class="outputSize"></span> cheese pizza<span class="outputToppings"></span>.<h5>
+            <h5><b>Price:</b><span class="outputPrice"></span></h5>
+            <h5><b>Address:</b></h5>
+            <h5><span class="outputStreet"></span><h5>
+            <h5><span class="outputCity"></span>, <span class="outputState"></span><h5>
+            <h5><span class="outputZip"></span></h5>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>

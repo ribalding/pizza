@@ -1,0 +1,8 @@
+#receiptDiv{
+  display:none;
+}
+
+#receipt{
+  border: 2px solid darkgrey;
+  border-radius: 5px;
+}
