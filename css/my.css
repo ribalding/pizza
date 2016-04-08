@@ -1,8 +1,49 @@
+body{
+  color: #f2f2f2;
+  background-color: black;
+  font-family: 'Lobster', cursive;
+}
+
+label{
+  font-size: 120%;
+}
+
+img{
+  opacity: .8;
+}
+
+h1{
+  font-size: 500%;
+  margin-bottom: -25px;
+}
+
 #receiptDiv{
   display:none;
 }
 
+.container{
+  background-image: url("../img/pizzamonster.jpg");
+  border-radius: 30px;
+  box-shadow: inset 4px 4px 10px black,
+            inset -4px -4px 10px black;
+  padding: 0px 30px 20px 30px;
+}
+
 #receipt{
-  border: 2px solid darkgrey;
+  border: 2px solid white;
   border-radius: 5px;
+  background-color: black;
+  opacity: .9;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+
+.receiptInfo{
+  margin-left: 20px;
+}
+
+.pizzaTime{
+  padding: 0px 0px 20px 50px;
+  border-radius: 20px;
+  color: white;
 }

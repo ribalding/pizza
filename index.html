@@ -3,47 +3,66 @@
     <head>
       <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
       <link href="css/my.css" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
       <script src="js/jquery-1.12.2.js"></script>
       <script src="js/my.js"></script>
+      <title>Pizza Monster | Portland's Spookiest Pizza</title>
     </head>
     <body>
       <div class="container">
-        <h1>Pizza Time</h1>
+        <div class="page-header pizzaTime">
+          <h1>Pizza Monster</h1>
+          <h3>Portland's Spookiest Pizza</h3>
+        </div>
         <div class="row" id="formDiv">
           <form id="pizzaForm">
             <div class="col-sm-6">
-              <h4>Create Your Pizza:</h4>
-              <div id=form-group>
-              <label for="pizzaSize">Select Size</label><br>
+              <div class=form-group>
+              <label for="pizzaSize">Select Size</label>
                 <select id="pizzaSize" class="form-control">
                   <option value="small">Small</option>
                   <option value="medium">Medium</option>
                   <option value="large">Large</option>
-                </select><br>
+                </select>
               </div>
               <div class="form-group">
-                <label for="toppingOne">Select First Topping:</label><br>
+                <label for="toppingOne">Select First Topping:</label>
                 <select id="toppingOne" class="form-control">
                   <option value="none">None</option>
                   <option value="pepperoni">Pepperoni</option>
                   <option value="peppers">Peppers</option>
                   <option value="onions">Onions</option>
                   <option value="chicken">Chicken</option>
+                  <option value="bbq">Barbecue Sauce</option>
+                  <option value="sausage">Sausage</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="toppingTwo">Select Second Topping:</label><br>
+                <label for="toppingTwo">Select Second Topping:</label>
                 <select id="toppingTwo" class="form-control">
                   <option value="none">None</option>
                   <option value="pepperoni">Pepperoni</option>
                   <option value="peppers">Peppers</option>
                   <option value="onions">Onions</option>
                   <option value="chicken">Chicken</option>
+                  <option value="bbq">Barbecue Sauce</option>
+                  <option value="sausage">Sausage</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="toppingThree">Select Third Topping:</label>
+                <select id="toppingThree" class="form-control">
+                  <option value="none">None</option>
+                  <option value="pepperoni">Pepperoni</option>
+                  <option value="peppers">Peppers</option>
+                  <option value="onions">Onions</option>
+                  <option value="chicken">Chicken</option>
+                  <option value="bbq">Barbecue Sauce</option>
+                  <option value="sausage">Sausage</option>
                 </select>
               </div>
             </div>
             <div class="col-sm-6">
-              <h4>Order Info</h4>
               <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name"></input>
@@ -73,15 +92,17 @@
           </form>
         </div>
         <div id="receiptDiv" class="row">
-          <div class="col-sm-5 col-sm-offset-3" id="receipt">
-            <h3>Thank You for Your Order <span class="outputName"></span>.<br>
-              Here is Your Receipt:<h3>
-            <h5><b>Order:</b> One <span class="outputSize"></span> cheese pizza<span class="outputToppings"></span>.<h5>
-            <h5><b>Price:</b><span class="outputPrice"></span></h5>
-            <h5><b>Address:</b></h5>
-            <h5><span class="outputStreet"></span><h5>
-            <h5><span class="outputCity"></span>, <span class="outputState"></span><h5>
-            <h5><span class="outputZip"></span></h5>
+          <div class="col-sm-6 col-sm-offset-3" id="receipt">
+            <h2>Thank You for Your Order <span class="outputName"></span>!<br><br>
+              Here is Your Receipt:<h2>
+            <div class="receiptInfo">
+              <h3><b>Order: </b> One <span class="outputSize"></span> cheese pizza<span class="outputToppings"></span>.</h3>
+              <h3><b>Price: </b><span class="outputPrice"></span></h3>
+              <h3><b>Address:</b></h3>
+              <h4><span class="outputStreet"></span></h4>
+              <h4><span class="outputCity"></span>, <span class="outputState"></span></h4>
+              <h4><span class="outputZip"></span></h4>
+            </div>
           </div>
         </div>
       </div>
